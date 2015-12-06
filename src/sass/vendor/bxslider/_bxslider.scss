@@ -1,0 +1,121 @@
+﻿@import "../../modules/base";
+/** BX Slider **/
+
+$controls: '../img/slider-arrows.png';
+$loader:   '../img/loader.gif';
+
+//layout
+.bx-wrapper {
+	position: relative;
+    @include px2rem(margin, 0 auto);
+	padding: 0;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+
+
+.bx-viewport {
+	//fix other elements on the page moving (on Chrome)
+	-webkit-transform: translatez(0);
+}
+
+// THEME
+
+.bx-wrapper {
+	.bx-pager,
+	.bx-controls-auto {
+		position: absolute;
+        @include px2rem(bottom, 7px);
+		width: 100%;	
+	}
+}
+
+// LOADER
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url($loader) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+// PAGER
+.bx-wrapper {
+	.bx-pager {
+		text-align: center;
+		font-size: .85em;
+		font-family: Arial;
+		font-weight: bold;
+		color: #d6d6d6;
+
+		&.bx-default-pager a {
+			background: #fff;
+			@include hide-text;
+			display: block;
+			width: 15px;
+			height: 15px;
+            box-sizing:border-box;
+            border:1px solid #d6d6d6;
+            box-shadow:inset 0 1px 2px rgba(#000, .3);
+			margin: 0 5px;
+			outline: 0;
+			border-radius: 50%;
+
+			&:hover,
+			&.active,
+			&:focus {
+				background: #d6d6d6;
+			}
+		}
+	}
+	.bx-pager-item,
+	.bx-controls-auto .bx-controls-auto-item {
+		display: inline-block;
+	}
+	.bx-pager-item {
+		font-size: 0;
+		line-height: 0;
+	}
+}
+
+// DIRECTION CONTROLS (NEXT / PREV)
+.bx-wrapper {
+	.bx-prev {
+		left: 26px;
+		background: url($controls) no-repeat 0 0;
+	}
+	.bx-next {
+		right: 26px;
+		background: url($controls) no-repeat 0 -60px;
+	}
+	.bx-controls-direction a {
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		outline: 0;
+		width: 60px;
+		height: 60px;
+		@include hide-text;
+		z-index: 100;
+        opacity:.5;
+        @include transition(opacity .3s ease);
+        display:none;
+
+        @include media($mobile){
+            display:block;
+        }
+
+		&.disabled {
+			display: none;
+		}
+
+        &:hover,
+        &:active{
+            opacity:1;
+        }
+	}
+}
+	

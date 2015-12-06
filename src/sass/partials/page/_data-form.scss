@@ -1,0 +1,95 @@
+﻿@import "../../modules/_base.scss";
+/*Data Form*/
+.b-data{
+    @include px2rem(padding, 35px 0 50px);
+   
+    @extend .rainbow;
+    &:after{
+        @include px2rem(height, 15px);
+    }
+
+    @include media($tablet){
+        @include px2rem(padding, 65px 0 80px);
+    }
+}
+
+.b-data__col{
+    float:left;
+    width:100%;
+    box-sizing:border-box;
+    min-height:1px;
+
+    @include media($tablet){
+        width:48%;
+        margin-left:4%;
+
+        &:first-child{
+            margin-left:0;
+        }
+    }
+
+    @include media($desktop){
+        width:32.5%;
+        margin-left:4.9%;
+    }
+}
+
+.b-data__col--last{
+    @include media($desktop){
+        width:62.6%;
+    }
+}
+
+.b-data__input{
+    @extend .g-input;
+
+    @include media($tablet){
+        @include px2rem(margin-bottom, 95px);
+    }
+}
+.b-data__input--last{
+    margin-bottom:0;
+}
+
+.b-data__block{
+    background:#dadada;
+    @include px2rem(padding, 15px 0);
+
+    @include media($tablet){
+         @include px2rem(padding, 15px);
+    }
+}
+
+.b-data__col--inner{
+    float:left;
+    width:100%;
+    min-height:1px;
+
+    @include media($desktop){
+        width:(100%-$grid-gutter)/2;
+        margin-left:$grid-gutter;
+
+        &:first-child{
+            margin-left:0;
+        }
+    }
+}
+
+.b-data__title{
+    @include px2rem(margin-bottom, 15px);
+    text-align:center;
+    color:#fff;
+    font-family:$font-medium;
+    @include font-size(26px);
+    line-height:1;
+    text-transform:uppercase;
+    @include px2rem(letter-spacing, -1px);
+}
+.b-data__col--small{
+    @include px2rem(width, 160px);
+    margin:0 auto;
+
+    .g-input{
+        text-align:center;
+    }
+}

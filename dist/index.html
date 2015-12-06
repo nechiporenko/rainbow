@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boilerplate</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/app.css">       
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="page">
+    <!--HEADER-->
+    <header class="b-header">
+        <div class="b-header__inner">
+           <div class="header__container">
+               <a href="#" class="b-header__logo">Страховой агрегатор На Радуге</a>
+               <div class="b-header__title">
+                   Страхование без хлопот
+                   <span class="b-header__subtitle">
+                       Легкий выбор, Простое оформление, быстрая доставка
+                   </span>
+               </div>
+               <div class="b-header__action">
+                   <a class="b-header__callback" data-modal="#callback">Хотите мы вам перезвоним?</a>
+                   <a href="tel:+74951234567" class="b-header__phone">(495) 12 345 67</a>
+               </div>
+           </div><!--/header__container-->
+        </div><!--/b-header__inner-->
+    </header>
+    <!--/HEADER-->
+
+    <main>
+        <!--SLIDER-->
+        <div class="slider">
+            <ul class="slider__list js-slider">
+                <li class="slider__item">
+                    <img src="img/slider/slider1.jpg" class="slider__img" alt="Slider Image" />
+                </li>
+                <li class="slider__item">
+                    <img src="img/slider/slider2.jpg" class="slider__img" alt="Slider Image" />
+                </li>
+                <li class="slider__item">
+                    <img src="img/slider/slider3.jpg" class="slider__img" alt="Slider Image" />
+                </li>
+            </ul>
+        </div><!--/slider-->
+        <!--/SLIDER-->
+        <!--/SERVICE-->
+        <div class="b-service">
+            <div class="g-container">
+                <div class="g-col g-col--one-third">
+                    <figure class="b-service__item">
+                        <span class="b-service__icon b-service__icon1"></span>
+                        <figcaption class="b-service__title">
+                            Выберите подходящую<br />
+                            страховую из списка
+                        </figcaption>
+                    </figure>
+                </div><!--/g-col-->
+                <div class="g-col g-col--one-third">
+                    <figure class="b-service__item">
+                        <span class="b-service__icon b-service__icon2"></span>
+                        <figcaption class="b-service__title">
+                            Заполните информацию<br />
+                            или доверьте это нам
+                        </figcaption>
+                    </figure>
+                </div><!--/g-col-->
+                <div class="g-col g-col--one-third">
+                    <figure class="b-service__item">
+                        <span class="b-service__icon b-service__icon3"></span>
+                        <figcaption class="b-service__title">
+                            Получите и оплатите<br />
+                            полис на дому
+                        </figcaption>
+                    </figure>
+                </div><!--/g-col-->
+            </div><!--/g-container-->
+        </div><!--/b-service-->
+        <!--SERVICE-->
+        <!--DATA FORM-->
+        <form class="b-data">
+            <div class="g-container">
+                <div class="b-data__col">
+                    <label class="g-visuallyhidden">Регион</label>
+                    <input type="text" class="b-data__input" placeholder="Регион" />
+                    <label class="g-visuallyhidden">Мощность</label>
+                    <input type="text" class="b-data__input" placeholder="Мощность" />
+                    <label class="g-visuallyhidden">Стаж вождения</label>
+                    <input type="text" class="b-data__input b-data__input--last" placeholder="Стаж вождения" />
+                </div><!--/b-data__col-->
+                <div class="b-data__col b-data__col--last">
+                    <div class="b-data__block">
+                        <div class="g-row">
+                            <div class="b-data__col--inner">
+                                <label class="g-visuallyhidden">Фамилия</label>
+                                <input type="text" class="g-input" placeholder="Фамилия" />
+                                <label class="g-visuallyhidden">Имя</label>
+                                <input type="text" class="g-input" placeholder="Имя" />
+                                <label class="g-visuallyhidden">Отчество</label>
+                                <input type="text" class="g-input" placeholder="Отчество" />
+                            </div>
+                            <div class="b-data__col--inner">
+                                <label class="g-visuallyhidden">День рождения</label>
+                                <input type="text" class="g-input" placeholder="День рождения" />
+                                <label class="g-visuallyhidden">ВУ серия</label>
+                                <input type="text" class="g-input" placeholder="ВУ серия" />
+                                <label class="g-visuallyhidden">ВУ номер</label>
+                                <input type="text" class="g-input" placeholder="ВУ номер" />
+                            </div>
+                        </div><!--/g-row-->
+                        <div class="b-data__title">
+                            Ваш коэффициент<br />
+                            безаварийной езды
+                        </div>
+                        <div class="b-data__col--small">
+                            <label class="g-visuallyhidden">Коэффициент</label>
+                            <input type="text" class="g-input" value="0.5" />
+                        </div>
+                    </div><!--/b-data__block-->
+                </div><!--/b-data__col-->
+            </div><!--/g-container-->
+        </form>
+        <!--/DATA FORM-->
+        <!--FAQ-->
+        <div class="b-faq">
+            <div class="g-container">
+                <span class="b-faq__title">Часто задаваемые вопросы</span>
+                <figure class="b-faq__icon">
+                    <img src="img/icon-call.png" alt="Call-Center" />
+                </figure>
+                <ol class="b-faq__list">
+                    <li class="b-faq__item">
+                        Максимально подробное описание того, что Вам нужно...
+                    </li>
+                    <li class="b-faq__item">
+                        Максимально подробное описание того, что Вам нужно...
+                    </li>
+                    <li class="b-faq__item">
+                        Максимально подробное описание того, что Вам нужно...
+                    </li>
+                </ol>
+                <figure class="b-faq__icon b-faq__icon--last">
+                    <img src="img/icon-question.png" alt="Question" />
+                </figure>
+            </div><!--/g-container-->
+        </div><!--/b-faq-->
+        <!--/FAQ-->
+    </main>
+        
+    <!--MODAL: CALLBACK-->
+    <div class="modal" id="callback">
+        <form class="modal__content">
+            <div class="g-title-h1">Укажите Ваше имя и номер телефона, и мы перезвоним Вам</div>
+            <label class="g-visuallyhidden">Имя</label>
+            <input type="text" class="g-input" placeholder="Ваше имя" required />
+            <label class="g-visuallyhidden">Телефон</label>
+            <input type="text" class="g-input js-phone" placeholder="Ваш телефон" />
+            <button type="submit" class="g-btn">Отправить</button>
+        </form>
+    </div>
+    <!--/MODAL: CALLBACK-->
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

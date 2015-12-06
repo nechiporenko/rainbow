@@ -1,0 +1,38 @@
+﻿@import "../../modules/_base.scss";
+/*Services Block*/
+.b-service{
+    @include px2rem(padding, 32px 0 6px);
+    background:#dadada;
+    
+    @extend .rainbow;
+
+    &:after{
+         @include px2rem(height, 6px);
+    }
+}
+
+.b-service__item{
+    @include px2rem(margin, 0 0 34px);
+    text-align:center;
+}
+.b-service__icon{
+    display:block;
+    @include px2rem(margin,0 auto 10px);
+    @include px2rem(width, 103px);
+    @include px2rem(height, 103px);
+    background:url(../img/service.png) center center no-repeat;
+}
+.b-service__icon1{
+    background-position:0 0;
+}
+.b-service__icon2{
+    background-position:0 -103px;
+}
+.b-service__icon3{
+    background-position:0 -206px;
+}
+.b-service__title{
+    @include font-size(16px);
+    line-height:1.1;
+    color:#6a6a6a;
+}

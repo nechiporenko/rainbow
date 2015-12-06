@@ -1,0 +1,86 @@
+﻿@import "../../modules/_base.scss";
+
+/*Header Logo*/
+.b-header__logo{
+    display:block;
+    @include px2rem(margin, 0 auto 10px);
+    @include px2rem(width, 175px);
+    @include px2rem(height, 64px);
+    @include hide-text;
+    background-image:url(../img/logo-2x.png);
+    background-position: left center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+
+    @include media($tablet){
+        float:left;
+        @include px2rem(margin, 0 10px 0 0);
+    }
+    @include media($desktop){
+        @include px2rem(margin, 0 40px 0 0);
+    }
+}
+
+.lt-ie9 .b-header__logo{
+    background-image:url(../img/logo.png);
+}
+
+/*Header Title*/
+.b-header__title{
+    @include px2rem(margin-bottom, 10px);
+    font-family:$font-medium;
+    color:#000;
+    @include font-size(32px);
+    line-height:1.1;
+    @include px2rem(letter-spacing, .3px);
+    text-align:center;
+
+    @include media($tablet){
+        float:right;
+        line-height:1.4;
+        text-align:left;
+    }
+
+    @include media($desktop){
+        float:left;
+        margin:0;
+        line-height:1.28;
+    }
+}
+.b-header__subtitle{
+    display:block;
+    font-family:$font-regular;
+    letter-spacing:0;
+    @include font-size(15px);
+}
+
+/*Header Phone*/
+.b-header__action{
+    text-align:center;
+    line-height:1;
+
+    @include media($tablet){
+        clear:both;
+    }
+
+    @include media($desktop){
+        clear:none;
+        float:right;
+        text-align:right;
+    }
+}
+.b-header__callback{
+    display:block;
+    color:#000;
+    @include font-size(21px);
+    text-decoration:none;
+    cursor:pointer;
+}
+.b-header__phone{
+    display:block;
+    font-family:$font-medium;
+    color:#000;
+    @include font-size(40px);
+    text-decoration:none;
+    white-space:nowrap;
+}
