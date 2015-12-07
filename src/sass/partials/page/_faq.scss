@@ -19,6 +19,10 @@
     line-height:1;
     color:#fff;
     text-transform:uppercase;
+    text-align:center;
+    @include media($desktop){
+        text-align:left;
+    }
 }
 
 .b-faq__icon{
@@ -49,4 +53,9 @@
 }
 .b-faq__item{
    @include font-size(20px);
+}
+
+.b-faq__link{
+    color:$text-color;
+    text-decoration:none;
 }

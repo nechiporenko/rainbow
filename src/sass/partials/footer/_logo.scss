@@ -1,0 +1,26 @@
+﻿@import "../../modules/_base.scss";
+/*Footer Logo*/
+.b-footer__logo{
+    display:block;
+    @include px2rem(margin, 0 auto 10px);
+    @include px2rem(width, 267px);
+    @include px2rem(height, 98px);
+    @include hide-text;
+    background-image:url(../img/logo-footer.png);
+    background-position: left center;
+    background-repeat:no-repeat;
+    
+
+    @include media($tablet){
+        float:left;
+        @include px2rem(margin, 0 10px 0 0);
+    }
+    @include media($desktop){
+        @include px2rem(margin, 0 40px 0 0);
+    }
+
+    @include hidpi(1.5){
+        background-image:url(../img/logo-footer-2x.png);
+        background-size:100% 100%;
+    }
+}

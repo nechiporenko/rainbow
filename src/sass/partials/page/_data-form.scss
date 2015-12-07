@@ -53,10 +53,12 @@
 
 .b-data__block{
     background:#dadada;
-    @include px2rem(padding, 15px 0);
+    @include px2rem(padding, 15px 10px);
+    @include px2rem(margin, 0 -10px);
 
     @include media($tablet){
          @include px2rem(padding, 15px);
+         margin:0;
     }
 }
 
@@ -91,5 +93,14 @@
 
     .g-input{
         text-align:center;
+    }
+}
+
+.b-data__submit{
+    @include px2rem(margin-top, 30px);
+    text-align:center;
+
+    @include media($tablet){
+        text-align:right;
     }
 }

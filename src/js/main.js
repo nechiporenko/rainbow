@@ -6,6 +6,8 @@
 // Кнопка скролла страницы
 // Модальное окно
 // Маска для телефонного номера
+// Слайдер
+// Скроллер
 // Если браузер не знает о svg-картинках
 
 jQuery(document).ready(function ($) {
@@ -129,6 +131,21 @@ jQuery(document).ready(function ($) {
     //---------------------------------------------------------------------------------------
     $('.js-slider').bxSlider();
 
+
+    //
+    // Скроллер
+    //---------------------------------------------------------------------------------------
+    function initScroller() {
+        new Miniscroll(".js-scroller", {
+            axis: "y",
+            size: 8,
+            sizethumb: "auto",
+            //onScroll: function (percent, offset) { },
+            thumbColor: "#c0c0c2",
+            trackerColor: "#fff"
+        });
+    }
+    if ($('.js-scroller').length) { initScroller();}
 
     //
     // Если браузер не знает о svg-картинках

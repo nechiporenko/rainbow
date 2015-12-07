@@ -1,5 +1,14 @@
-@import "../modules/base";
+@import "../modules/_base.scss";
 
-.footer{
+@import "footer/_logo.scss";
+
+/*Footer*/
+.b-footer{
    
+}
+.b-footer__inner{
+    @include px2rem(padding, 15px 0);
+}
+.b-footer__container{
+    @extend .b-header__container;
 }

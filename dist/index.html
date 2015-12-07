@@ -18,7 +18,7 @@
     <!--HEADER-->
     <header class="b-header">
         <div class="b-header__inner">
-           <div class="header__container">
+           <div class="b-header__container">
                <a href="#" class="b-header__logo">Страховой агрегатор На Радуге</a>
                <div class="b-header__title">
                    Страхование без хлопот
@@ -40,13 +40,13 @@
         <div class="slider">
             <ul class="slider__list js-slider">
                 <li class="slider__item">
-                    <img src="img/slider/slider1.jpg" class="slider__img" alt="Slider Image" />
+                    <img src="img/slider/slider1.png" class="slider__img" alt="Slider Image" />
                 </li>
                 <li class="slider__item">
-                    <img src="img/slider/slider2.jpg" class="slider__img" alt="Slider Image" />
+                    <img src="img/slider/slider2.png" class="slider__img" alt="Slider Image" />
                 </li>
                 <li class="slider__item">
-                    <img src="img/slider/slider3.jpg" class="slider__img" alt="Slider Image" />
+                    <img src="img/slider/slider3.png" class="slider__img" alt="Slider Image" />
                 </li>
             </ul>
         </div><!--/slider-->
@@ -87,47 +87,157 @@
         <!--DATA FORM-->
         <form class="b-data">
             <div class="g-container">
-                <div class="b-data__col">
-                    <label class="g-visuallyhidden">Регион</label>
-                    <input type="text" class="b-data__input" placeholder="Регион" />
-                    <label class="g-visuallyhidden">Мощность</label>
-                    <input type="text" class="b-data__input" placeholder="Мощность" />
-                    <label class="g-visuallyhidden">Стаж вождения</label>
-                    <input type="text" class="b-data__input b-data__input--last" placeholder="Стаж вождения" />
-                </div><!--/b-data__col-->
-                <div class="b-data__col b-data__col--last">
-                    <div class="b-data__block">
-                        <div class="g-row">
-                            <div class="b-data__col--inner">
-                                <label class="g-visuallyhidden">Фамилия</label>
-                                <input type="text" class="g-input" placeholder="Фамилия" />
-                                <label class="g-visuallyhidden">Имя</label>
-                                <input type="text" class="g-input" placeholder="Имя" />
-                                <label class="g-visuallyhidden">Отчество</label>
-                                <input type="text" class="g-input" placeholder="Отчество" />
+                <div class="g-row">
+                    <div class="b-data__col">
+                        <label class="g-visuallyhidden">Регион</label>
+                        <input type="text" class="b-data__input" placeholder="Регион" />
+                        <label class="g-visuallyhidden">Мощность</label>
+                        <input type="text" class="b-data__input" placeholder="Мощность" />
+                        <label class="g-visuallyhidden">Стаж вождения</label>
+                        <input type="text" class="b-data__input b-data__input--last" placeholder="Стаж вождения" />
+                    </div><!--/b-data__col-->
+                    <div class="b-data__col b-data__col--last">
+                        <div class="b-data__block">
+                            <div class="g-row">
+                                <div class="b-data__col--inner">
+                                    <label class="g-visuallyhidden">Фамилия</label>
+                                    <input type="text" class="g-input" placeholder="Фамилия" />
+                                    <label class="g-visuallyhidden">Имя</label>
+                                    <input type="text" class="g-input" placeholder="Имя" />
+                                    <label class="g-visuallyhidden">Отчество</label>
+                                    <input type="text" class="g-input" placeholder="Отчество" />
+                                </div>
+                                <div class="b-data__col--inner">
+                                    <label class="g-visuallyhidden">День рождения</label>
+                                    <input type="text" class="g-input" placeholder="День рождения" />
+                                    <label class="g-visuallyhidden">ВУ серия</label>
+                                    <input type="text" class="g-input" placeholder="ВУ серия" />
+                                    <label class="g-visuallyhidden">ВУ номер</label>
+                                    <input type="text" class="g-input" placeholder="ВУ номер" />
+                                </div>
+                            </div><!--/g-row-->
+                            <div class="b-data__title">
+                                Ваш коэффициент<br />
+                                безаварийной езды
                             </div>
-                            <div class="b-data__col--inner">
-                                <label class="g-visuallyhidden">День рождения</label>
-                                <input type="text" class="g-input" placeholder="День рождения" />
-                                <label class="g-visuallyhidden">ВУ серия</label>
-                                <input type="text" class="g-input" placeholder="ВУ серия" />
-                                <label class="g-visuallyhidden">ВУ номер</label>
-                                <input type="text" class="g-input" placeholder="ВУ номер" />
+                            <div class="b-data__col--small">
+                                <label class="g-visuallyhidden">Коэффициент</label>
+                                <input type="text" class="g-input" value="0.5" />
                             </div>
-                        </div><!--/g-row-->
-                        <div class="b-data__title">
-                            Ваш коэффициент<br />
-                            безаварийной езды
-                        </div>
-                        <div class="b-data__col--small">
-                            <label class="g-visuallyhidden">Коэффициент</label>
-                            <input type="text" class="g-input" value="0.5" />
-                        </div>
-                    </div><!--/b-data__block-->
-                </div><!--/b-data__col-->
+                        </div><!--/b-data__block-->
+                    </div><!--/b-data__col-->
+                </div><!--/g-row-->
+                <div class="b-data__submit">
+                    <button type="submit" class="g-btn">Подобрать</button>
+                </div>
             </div><!--/g-container-->
         </form>
         <!--/DATA FORM-->
+        <!--CHOICE-->
+        <div class="choice">
+            <div class="g-container">
+                <div class="choice-title choice-title--5col">
+                    <span class="choice-title__item">СК</span>
+                    <span class="choice-title__item">Рейтинг</span>
+                    <span class="choice-title__item">Цена</span>
+                    <span class="choice-title__item">Бонусы</span>
+                    <span class="choice-title__item">&nbsp;</span>
+                </div><!--/choice-title-->
+               <div class="scroller js-scroller">
+                   <ul class="choice-list choice-list--5col">
+                       <li class="choice-list__item">
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">СК</span>
+                               <img src="http://placehold.it/76x76" class="g-max-full-width" alt="Logo" />
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Рейтинг</span>
+                               98%
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Цена</span>
+                               <span class="choice-list__price">600 руб</span>
+                               <span class="choice-list__price choice-list__price--old">700 руб</span>
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Бонусы</span>
+                               +200 руб
+                           </div>
+                           <div class="choice-list__cell">
+                               <button type="button" class="g-btn">Купить</button>
+                           </div>
+                       </li>
+                       <li class="choice-list__item">
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">СК</span>
+                               <img src="http://placehold.it/70x40" class="g-max-full-width" alt="Logo" />
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Рейтинг</span>
+                               75%
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Цена</span>
+                               <span class="choice-list__price">450 руб</span>
+                               <span class="choice-list__price choice-list__price--old">500 руб</span>
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Бонусы</span>
+                               +100 руб
+                           </div>
+                           <div class="choice-list__cell">
+                               <button type="button" class="g-btn">Купить</button>
+                           </div>
+                       </li>
+                       <li class="choice-list__item">
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">СК</span>
+                               <img src="http://placehold.it/80x50" class="g-max-full-width" alt="Logo" />
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Рейтинг</span>
+                               80%
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Цена</span>
+                               <span class="choice-list__price">500 руб</span>
+                               <span class="choice-list__price choice-list__price--old">650 руб</span>
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Бонусы</span>
+                               +150 руб
+                           </div>
+                           <div class="choice-list__cell">
+                               <button type="button" class="g-btn">Купить</button>
+                           </div>
+                       </li>
+                       <li class="choice-list__item">
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">СК</span>
+                               <img src="http://placehold.it/50x50" class="g-max-full-width" alt="Logo" />
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Рейтинг</span>
+                               98%
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Цена</span>
+                               <span class="choice-list__price">600 руб</span>
+                               <span class="choice-list__price choice-list__price--old">700 руб</span>
+                           </div>
+                           <div class="choice-list__cell">
+                               <span class="choice-list__xs">Бонусы</span>
+                               +200 руб
+                           </div>
+                           <div class="choice-list__cell">
+                               <button type="button" class="g-btn">Купить</button>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+            </div><!--/g-container-->
+        </div><!--/b-choice-->
+        <!--/CHOICE-->
         <!--FAQ-->
         <div class="b-faq">
             <div class="g-container">
@@ -137,13 +247,13 @@
                 </figure>
                 <ol class="b-faq__list">
                     <li class="b-faq__item">
-                        Максимально подробное описание того, что Вам нужно...
+                        <a href="#" class="b-faq__link">Максимально подробное описание того, что Вам нужно...</a>
                     </li>
                     <li class="b-faq__item">
-                        Максимально подробное описание того, что Вам нужно...
+                        <a href="#" class="b-faq__link">Максимально подробное описание того, что Вам нужно...</a>
                     </li>
                     <li class="b-faq__item">
-                        Максимально подробное описание того, что Вам нужно...
+                        <a href="#" class="b-faq__link">Максимально подробное описание того, что Вам нужно...</a>
                     </li>
                 </ol>
                 <figure class="b-faq__icon b-faq__icon--last">
@@ -153,7 +263,7 @@
         </div><!--/b-faq-->
         <!--/FAQ-->
     </main>
-        
+     
     <!--MODAL: CALLBACK-->
     <div class="modal" id="callback">
         <form class="modal__content">
@@ -166,6 +276,17 @@
         </form>
     </div>
     <!--/MODAL: CALLBACK-->
+
+    <!--FOOTER-->
+    <footer class="b-footer">
+        <div class="b-footer__inner">
+            <div class="b-footer__container">
+                <a href="#" class="b-footer__logo">Страховой агрегатор На Радуге</a>
+            </div><!--/b-footer__container-->
+        </div><!--/b-footer__inner-->
+    </footer>
+    <!--/FOOTER-->
+
     <script src="js/vendor/modernizr.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

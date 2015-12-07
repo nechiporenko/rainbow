@@ -1,0 +1,46 @@
+﻿@import "../../modules/_base.scss";
+/*Miniscroll*/
+.scroller{
+    width:100%;
+    @include px2rem(padding-right, 20px);
+    box-sizing:border-box;
+    overflow:hidden;
+    @include px2rem(max-height, 260px);  
+}
+
+.no-js .scroller{
+    @include media($tablet){
+        height:auto;
+    }
+}
+
+.miniscroll-thumb{
+    width:8px;
+    background:#c0c0c2;
+    border-radius:4px;
+    position:relative;
+
+    &:before,
+    &:after{
+        content:'';
+        display:block;
+        width:8px;
+        position:absolute;
+        left:0; top:50%;
+        z-index:2;
+    }
+
+    &:before{
+        height:12px;
+        background:#c0c0c2;
+        border-top:2px solid #fff;
+        border-bottom:2px solid #fff;
+        margin-top:-8px;
+    }
+
+    &:after{
+        height:2px;
+        background:#fff;
+        margin-top:-1px;
+    }
+}
