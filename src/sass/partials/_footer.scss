@@ -7,8 +7,71 @@
    
 }
 .b-footer__inner{
-    @include px2rem(padding, 15px 0);
+    @include px2rem(padding, 12px 0);
 }
 .b-footer__container{
     @extend .b-header__container;
+}
+
+.b-footer__sole{
+    @include px2rem(padding, 7px 0 40px);
+    background:#e5e5e5;
+    color:#000;
+    text-transform:uppercase;
+    @include px2rem(letter-spacing, .5px);
+
+    @include media($desktop){
+        @include px2rem(padding-bottom, 80px);
+    }
+}
+
+/*Footer Menu*/
+.f-menu{
+    @include px2rem(margin-bottom, 15px);
+    @include font-size(12px);
+    text-align:center;
+
+    @include media($desktop){
+        float:left;
+        text-align:left;
+    }
+}
+
+.f-menu__link{
+    display:block;
+    color:#000;
+    text-decoration:none;
+    &:hover,
+    &:active{
+        color:$primary;
+    }
+
+    @include media($tablet){
+        display:inline-block;
+        margin-left:5px;
+
+        &:before{
+            content:'|';
+            display:inline-block;
+            margin-right:5px;
+        }
+
+        &:first-child{
+            margin-left:0;
+
+            &:before{
+                display:none;
+            }
+        }
+    }
+}
+
+/*Footer Text*/
+.b-footer__text{
+    @include font-size(12px);
+    text-align:center;
+    @include media($desktop){
+        float:right;
+        text-align:right;
+    }
 }

@@ -88,7 +88,7 @@
     @include px2rem(letter-spacing, -1px);
 }
 .b-data__col--small{
-    @include px2rem(width, 160px);
+    @include px2rem(width, 178px);
     margin:0 auto;
 
     .g-input{

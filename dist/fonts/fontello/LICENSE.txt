@@ -10,13 +10,31 @@ Font license info
    Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
-## Modern Pictograms
+## MFG Labs
 
-   Copyright (c) 2012 by John Caserta. All rights reserved.
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    John Caserta
+   Author:    MFG Labs
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://thedesignoffice.org/project/modern-pictograms/
+   Homepage:  http://www.mfglabs.com/
+
+
+## Zocial
+
+   Copyright (C) 2012 by Sam Collins
+
+   Author:    Sam Collins
+   License:   MIT (http://opensource.org/licenses/mit-license.php)
+   Homepage:  http://zocial.smcllns.com/
+
+
+## Brandico
+
+   (C) 2012 by Vitaly Puzrin
+
+   Author:    Crowdsourced, for Fontello project
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  
 
 
 ## Entypo
