@@ -31,10 +31,6 @@
     box-sizing:border-box;
     width:100%;
     @include px2rem(max-width, 560px);
-    //background:#000;
-    //background:rgba(0,0,0,0.2);
-    // @include px2rem(border-radius, 22px);
-    //@include px2rem(padding, 4px);
     z-index:3100;
 }
 

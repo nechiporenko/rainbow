@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
         // добавим в документ
         $overlay = $('<div class="overlay" id="overlay"></div>'); //оверлей
         $close = $('<a class="modal__close" href="#"><i class="icon-cancel"></i></a>'); //иконка закрыть
-
+        $body.append($overlay);
 
         $close.on('click', function (e) {
             e.preventDefault();
@@ -90,7 +90,6 @@ jQuery(document).ready(function ($) {
             $modal = $(link);
             $modal.append($close);
             method.center();
-            $body.append($overlay);
             $window.bind('resize.modal', method.center);
             $overlay.fadeIn();
             $modal.fadeIn();
@@ -105,7 +104,7 @@ jQuery(document).ready(function ($) {
         method.close = function () {
             $modal.fadeOut('fast');
             $overlay.fadeOut('fast', function () {
-                $overlay.unbind('click').remove(); //убиваем оверлей
+                $overlay.unbind('click');
             });
             $window.unbind('resize.modal');
         };
@@ -139,13 +138,43 @@ jQuery(document).ready(function ($) {
         new Miniscroll(".js-scroller", {
             axis: "y",
             size: 8,
-            sizethumb: "auto",
+            sizethumb: 120,
             //onScroll: function (percent, offset) { },
             thumbColor: "#c0c0c2",
             trackerColor: "#fff"
         });
     }
-    if ($('.js-scroller').length) { initScroller();}
+    if ($('.js-scroller').length) { initScroller(); }
+
+
+    //
+    // Тултипы
+    //---------------------------------------------------------------------------------------
+    function initTooltips() {
+        var winW = $window.width(),
+            tipPosition = 'top';
+        if (winW > 768) {
+            tipPosition = 'left';
+        }
+
+        $('.js-form-tip').tooltipster({
+            content: $('.b-data__tooltip'),
+            contentAsHTML: true,
+            minWidth: 300,
+            maxWidth: 560,
+            trigger: 'click',
+            hideOnClick: true,
+            position: tipPosition,
+            functionBefore: function (origin, continueTooltip) {
+                $('#overlay').fadeIn('fast', continueTooltip());
+            },
+            functionAfter: function (origin) {
+                $('#overlay').hide();
+            }
+        });
+    }
+
+    initTooltips();
 
     //
     // Если браузер не знает о svg-картинках

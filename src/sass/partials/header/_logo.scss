@@ -80,6 +80,11 @@
     @include font-size(21px);
     text-decoration:none;
     cursor:pointer;
+
+    &:hover,
+    &:active{
+        color:$primary;
+    }
 }
 .b-header__phone{
     display:block;

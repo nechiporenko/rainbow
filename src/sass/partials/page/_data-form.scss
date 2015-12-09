@@ -55,6 +55,7 @@
     background:#dadada;
     @include px2rem(padding, 15px 10px);
     @include px2rem(margin, 0 -10px);
+    position:relative;
 
     @include media($tablet){
          @include px2rem(padding, 15px);
@@ -99,8 +100,32 @@
 .b-data__submit{
     @include px2rem(margin-top, 30px);
     text-align:center;
+}
 
-    @include media($tablet){
-        text-align:right;
+.b-data__info{
+    display:inline-block;
+    margin-bottom:15px;
+    @include px2rem(width, 36px);
+    @include px2rem(height, 36px);
+    @include px2rem(line-height, 36px);
+    border:2px solid #fff;
+    border-radius:50%;
+    text-align:center;
+    color:#fff;
+    @include font-size(24px);
+    cursor:pointer;
+    @include transition-property(color, border-color);
+    @include transition-duration(.15s);
+
+    &:hover,
+    &:active{
+        color:$primary;
+        border-color:$primary;
+    }
+
+    @include media($desktop){
+        position:absolute;
+        right:15px;
+        bottom:75px;
     }
 }
