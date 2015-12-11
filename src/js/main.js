@@ -161,7 +161,7 @@ jQuery(document).ready(function ($) {
             content: $('.b-data__tooltip'),
             contentAsHTML: true,
             minWidth: 300,
-            maxWidth: 560,
+            maxWidth: 740,
             trigger: 'click',
             hideOnClick: true,
             position: tipPosition,

@@ -46,17 +46,16 @@
 }
 
 .social__list{
-    @extend .g-clearlist;
+    list-style-type:none;
+    @include px2rem(margin, 0 -3px);
+    padding:0;
     font-size:0;
 }
 .social__item{
     display:inline-block;
-    @include px2rem(margin, 0 0 7px 7px);
+    @include px2rem(padding, 0 3px);
+    @include px2rem(margin, 0 0 6px 0);
     @include font-size(20px);
-
-    &:first-child{
-        margin-left:0;
-    }
 }
 
 .social__link{

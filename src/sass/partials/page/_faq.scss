@@ -58,4 +58,8 @@
 .b-faq__link{
     color:$text-color;
     text-decoration:none;
+    &:hover,
+    &:active{
+        color:#000;
+    }
 }
