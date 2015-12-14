@@ -17,13 +17,14 @@ textarea {
 .g-select,
 .g-textarea{
     width:100%;
-    @include px2rem(padding, 6px 10px);//The 6px vertically centers text on FF, ignored by Webkit
+    @include px2rem(padding, 8px 10px);//The 8px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
     border: 1px solid $border-color;
+    border-radius:0;
     color:$text-color;
     box-shadow: inset 0 3px 6px 3px rgba(#000, .1);
     box-sizing: border-box;
-    @include font-size(21px);
+    @include font-size(18px);
 
     @include placeholder{
         color:$text-color;
@@ -35,6 +36,10 @@ textarea {
         border-color:$primary;
         box-shadow: inset 0 3px 6px  3px rgba($primary, .3);
         outline:0;
+    }
+
+    @include media($desktop){
+        @include font-size(21px);
     }
 }
 

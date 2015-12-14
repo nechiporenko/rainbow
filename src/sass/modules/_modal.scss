@@ -43,9 +43,27 @@
     background:#fff;
     @include px2rem(padding, 20px 10px);
     margin:0;
+    position:relative;
+
+    &:after{
+        content:'';
+        display:none;
+        position:absolute;
+        left:0; bottom:0;
+        width:100%;
+        height:113px;
+        background:url(../img/rainbow.png) center bottom no-repeat;
+    }
 
     @include media(min-width em(640)){
          @include px2rem(padding, $project-line-height 20px);
+    }
+
+    @include media($desktop){
+        padding-bottom:110px;
+        &:after{
+            display:block;
+        }
     }
 }
 .modal__close{
