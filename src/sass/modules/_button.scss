@@ -25,4 +25,15 @@
         background-color:darken($primary, 10%);
         outline:0;
     }
+
+    &:disabled{
+        background-color:$text-color;
+        border-color:$text-color;
+        &:hover,
+        &:active,
+        &:focus{
+            background-color:$text-color;
+            border-color:$text-color;
+        }
+    }
 }

@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Choice Page</title>
+    <meta name="description" content="Page Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/app.css">       
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="page">
+    <!--HEADER-->
+    <header class="b-header">
+        <div class="b-header__inner">
+           <div class="b-header__container">
+               <a href="#" class="b-header__logo" data-modal="#about">Страховой агрегатор На Радуге</a>
+               <div class="b-header__title">
+                   Страхование без хлопот
+                   <span class="b-header__subtitle">
+                       Легкий выбор, Простое оформление, быстрая доставка
+                   </span>
+               </div>
+               <div class="b-header__action">
+                   <a class="b-header__callback" data-modal="#callback">Хотите мы вам перезвоним?</a>
+                   <a href="tel:+74951234567" class="b-header__phone">(495) 12 345 67</a>
+               </div>
+           </div><!--/b-header__container-->
+        </div><!--/b-header__inner-->
+    </header>
+    <!--/HEADER-->
+
+    <main>
+        <!--SLIDER-->
+        <div class="slider">
+            <ul class="slider__list js-slider">
+                <li class="slider__item">
+                    <img src="img/slider/slider1.png" class="slider__img" alt="Slider Image" />
+                </li>
+                <li class="slider__item">
+                    <img src="img/slider/slider2.png" class="slider__img" alt="Slider Image" />
+                </li>
+                <li class="slider__item">
+                    <img src="img/slider/slider3.png" class="slider__img" alt="Slider Image" />
+                </li>
+            </ul>
+        </div><!--/slider-->
+        <!--/SLIDER-->
+        
+        <!--RESULT-->
+        <div class="b-result">
+            <div class="g-container">
+                <span class="b-result__title">Результат выбора СК</span>
+                <ul class="b-result__list">
+                    <li class="b-result__item">
+                        <span class="b-result__name">СК</span>
+                        <div class="b-result__table">
+                            <div class="b-result__cell">
+                                <img src="http://placehold.it/70x30" class="g-max-full-width" alt="Logo" />
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-result__item">
+                        <span class="b-result__name">Регион</span>
+                        <div class="b-result__table">
+                            <div class="b-result__cell">
+                                <span class="b-result__text">Москва</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-result__item">
+                        <span class="b-result__name">Мощность л.с.</span>
+                        <div class="b-result__table">
+                            <div class="b-result__cell">
+                                <span class="b-result__text">150</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-result__item">
+                        <span class="b-result__name">Бонусы/Скидка</span>
+                        <div class="b-result__table">
+                            <div class="b-result__cell">
+                                <span class="b-result__text">25%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-result__item">
+                        <span class="b-result__name">Цена</span>
+                        <div class="b-result__table">
+                            <div class="b-result__cell">
+                                <span class="b-result__text">700 руб</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="b-result__form">
+                    <div class="g-row">
+                        <div class="b-result__col">
+                            <label class="g-visuallyhidden">Телефон</label>
+                            <input type="text" class="b-result__input js-phone" placeholder="Телефон" required />
+                        </div>
+                        <div class="b-result__col">
+                            <label class="g-visuallyhidden">Имя</label>
+                            <input type="text" class="b-result__input" placeholder="Имя" required />
+                        </div>
+                    </div>
+                    <div class="g-row">
+                        <div class="b-result__col">
+                            <button type="button" class="b-result__btn">Оформить на сайте</button>
+                        </div>
+                        <div class="b-result__col">
+                            <button type="submit" class="b-result__btn b-result__btn--alt">Оформить по телефону</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--/RESULT-->
+
+        <!--ORDER FORM-->
+        <form class="b-order">
+            <div class="b-order__section b-order__section--1">
+                <span class="b-order__title">Страхователь</span>
+            </div>
+            <div class="b-order__section b-order__section--2">
+                <span class="b-order__title">Собственник</span>
+            </div>
+            <div class="b-order__section b-order__section--3">
+                <span class="b-order__title">Водители</span>
+            </div>
+            <div class="b-order__section b-order__section--4">
+                <span class="b-order__title">Транспортное средство</span>
+            </div>
+            <div class="b-order__section b-order__section--5">
+                <span class="b-order__title">Доставка</span>
+            </div>
+        </form>
+        <!--/ORDER FORM-->
+    </main>
+     
+    <!--MODAL: CALLBACK-->
+    <div class="modal" id="callback">
+        <form class="modal__content">
+            <div class="g-title-h1">Укажите Ваше имя и номер телефона, и мы перезвоним Вам</div>
+            <label class="g-visuallyhidden">Имя</label>
+            <input type="text" class="g-input" placeholder="Ваше имя" required />
+            <label class="g-visuallyhidden">Телефон</label>
+            <input type="text" class="g-input js-phone" placeholder="Ваш телефон" />
+            <div class="g-text-center">
+                <button type="submit" class="g-btn">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <!--/MODAL: CALLBACK-->
+
+    <!--MODAL: ABOUT COMPANY-->
+    <div class="modal" id="about">
+        <div class="modal__content">
+            <div class="g-title-h1">О компании</div>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Vestibulum auctor dapibus neque.</li>
+            </ol>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </div>
+    <!--/MODAL: ABOUT COMPANY-->
+
+    <!--FOOTER-->
+    <footer class="b-footer">
+        <div class="b-footer__inner">
+            <div class="b-footer__container">
+                <a href="#" class="b-footer__logo" data-modal="#about">Страховой агрегатор На Радуге</a>
+                <div class="social">
+                    <span class="social__title">Следите за нами в социальных медиа</span>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--facebook"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--twitter"><i class="icon-twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--pinterest"><i class="icon-pinterest"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--gplus"><i class="icon-gplus"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--vk"><i class="icon-vk"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--linkedin"><i class="icon-linkedin"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--instagramm"><i class="icon-instagramm"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--rss"><i class="icon-rss"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--youtube"><i class="icon-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div><!--/social-->
+                <div class="b-footer__action">
+                    <a class="b-footer__callback" data-modal="#callback">Хотите мы вам перезвоним?</a>
+                    <a href="tel:+74951234567" class="b-footer__phone">(495) 12 345 67</a>
+                    <a href="tel:+74959876543" class="b-footer__phone">(495) 98 765 43</a>
+                </div><!--/b-footer__action-->
+            </div><!--/b-footer__container-->
+        </div><!--/b-footer__inner-->
+        <div class="b-footer__sole">
+            <div class="g-container">
+                <nav class="f-menu">
+                    <a href="#" class="f-menu__link">Условия использования</a>
+                    <a href="#" class="f-menu__link">Конфиденциальность</a>
+                    <a href="#" class="f-menu__link">Свяжитесь с нами</a>
+                </nav>
+                <div class="b-footer__text">
+                    Все права защищены © FriendDesign 2015
+                </div>
+            </div><!--/g-container-->
+        </div><!--/b-footer__sole-->
+    </footer>
+    <!--/FOOTER-->
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

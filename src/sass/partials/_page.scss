@@ -1,9 +1,13 @@
 ﻿@import "../modules/_base.scss";
 
-@import "page/_slider.scss";
-@import "page/_service.scss";
-@import "page/_data-form.scss";
-@import "page/_choice-block.scss";
-@import "page/_faq.scss";
-@import "page/_scroll-up.scss";
+@import "page/_slider.scss";//слайдер
+@import "page/_service.scss";//блок описания услуг
+@import "page/_data-form.scss";//первая предварительная форма
+@import "page/_choice-block.scss";//блок с вариантами для выбора
+@import "page/_faq.scss";//блок ЧАВО
+
+@import "page/_result.scss"; //блок результат подбора услуги
+@import "page/_order-form.scss"; //блок формы оформления услуги
+
+@import "page/_scroll-up.scss";//кнопка скролла страницы
 

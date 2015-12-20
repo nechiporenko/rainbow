@@ -1,0 +1,163 @@
+﻿@import "../../modules/_base.scss";
+/*Result Block*/
+.b-result{
+    @include px2rem(padding, 40px 0 45px);
+    background:#fff;
+
+    @extend .rainbow;
+    &:after{
+        @include px2rem(height, 5px);
+    }
+
+    &:before{
+        content:'';
+        display:block;
+        background:url(../img/bg-rainbow.png) center top repeat-y;
+        background-size:100% 100%;
+        position:absolute;
+        left:0; top:0;
+        width:100%;
+        height:15px;
+    }
+}
+
+.b-result__title{
+    display:block;
+    @include px2rem(margin, 0 0 $project-line-height/2);
+    font-family:$font-regular;
+    font-weight:normal;
+    @include font-size(30px);
+    color:$text-color;
+    text-align:center;
+    text-transform:uppercase;
+    @include px2rem(letter-spacing, .5px);
+    line-height:1.2;
+}
+
+.b-result__list{
+    width:100%;
+    list-style-type:none;
+    padding:0;
+    @include px2rem(margin, 0 auto 40px);
+    text-align:center;
+
+    @include media($tablet){
+        display:table;
+        table-layout:fixed;
+    }
+
+    @include media($desktop){
+        @include px2rem(max-width, 890px);
+    }
+}
+
+.b-result__item{
+    display:block;
+
+    @include media($tablet){
+        display:table-cell;
+        vertical-align:top;
+
+        &:first-child{
+            width:10%;
+        }
+    }
+}
+
+.b-result__name{
+    display:block;
+    @include px2rem(margin-bottom, 5px);
+    @include px2rem(padding, 0 10px);
+    @include font-size(25px);
+    color:#000;
+    white-space:nowrap;
+
+    @include media($tablet){
+        @include px2rem(margin-bottom, 20px);
+        @include font-size(18px);
+    }
+
+    @include media($desktop){
+        @include font-size(25px);
+    }
+}
+
+.b-result__table{
+    width:100%;
+    @include px2rem(height, 58px);
+    @include px2rem(padding, 3px 0);
+    box-sizing:border-box;
+    border-bottom:1px solid $border-color;
+    display:table;
+
+    @include media($tablet){
+         border-top:1px solid $border-color;
+    }
+}
+
+.b-result__cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+.b-result__text{
+    @include font-size(25px);
+    font-family:$font-medium;
+    color:$text-color;
+    white-space:nowrap;
+}
+
+
+.b-result__form{
+    width:100%;
+    @include px2rem(max-width, 828px);
+    margin:0 auto;
+}
+.b-result__col{
+    float:left;
+    width:100%;
+    min-height:1px;
+    box-sizing:border-box;
+
+    @include media($tablet){
+        width:50%;
+        @include px2rem(padding, 0 20px);
+    }
+
+    @include media($desktop){
+        @include px2rem(padding, 0 50px);
+    }
+}
+
+.b-result__btn,
+.b-result__input{
+    @include px2rem(margin-bottom, 25px);
+}
+
+.b-result__input{
+    @extend .g-input;
+}
+.b-result__btn{
+    @extend .g-btn;
+    width:100%;
+    @include px2rem(padding, 0 10px);
+    @include font-size(18px);
+
+    @include media($tablet){
+        margin:0;
+    }
+
+    @include media($desktop){
+        @include font-size(22px);
+    }
+}
+
+.b-result__btn--alt{
+    background-color:#faab19;
+    border-color:#faab19;
+
+    &:hover,
+    &:focus{
+        background-color:darken(#faab19, 10%);
+        border-color:darken(#faab19, 10%);
+    }
+}
