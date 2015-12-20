@@ -67,7 +67,10 @@
 // Маска для телефонного номера
 // Слайдер
 // Скроллер
+// Тултипы
+// Клик по чекбоксу "совпадает со страхователем"
 // Если браузер не знает о svg-картинках
+// Если браузер не знает о плейсхолдерах
 
 jQuery(document).ready(function ($) {
     //Кэшируем
@@ -234,6 +237,40 @@ jQuery(document).ready(function ($) {
     }
 
     initTooltips();
+
+
+    //
+    // Клик по чекбоксу "совпадает со страхователем"
+    //---------------------------------------------------------------------------------------
+    function orderCheckbox() {
+        var $block = $('.js-checkbox'),
+            $label = $block.children('label'),
+            $input = $block.find('input[type="checkbox"]'),
+            $target = $block.parent('div').find('.g-col input');
+
+        if ($input.is(':checked')) {
+            checkState();
+        }
+
+        $input.on('change', function () {
+            if ($(this).is(':checked')) {
+                checkState();
+            } else {
+                uncheckState();
+            }
+        });
+
+        function checkState() {
+            $label.addClass('active');
+            $target.prop('disabled', true);
+        }
+
+        function uncheckState() {
+            $label.removeClass('active');
+            $target.prop('disabled', false);
+        }
+    }
+    if ($('.js-checkbox').length) { orderCheckbox();}
 
     //
     // Если браузер не знает о svg-картинках

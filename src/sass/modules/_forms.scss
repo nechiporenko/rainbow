@@ -38,6 +38,10 @@ textarea {
         outline:0;
     }
 
+    @include media($tablet){
+        @include font-size(16px);
+    }
+
     @include media($desktop){
         @include font-size(21px);
     }
@@ -137,4 +141,34 @@ input[type="radio"] {
     .g-notice__close{
         color:red;
     }
+}
+
+/*Custom checkboxes*/
+input[type=checkbox].g-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].g-checkbox + label.g-checkbox__label {
+	padding-left:40px;
+	display:inline-block;
+	min-height:31px;
+    background:url(../img/checkbox.png) left top no-repeat;
+	vertical-align:top;
+	cursor:pointer;
+}
+
+input[type=checkbox].g-checkbox:checked + label.g-checkbox__label,
+label.g-checkbox__label {
+    background:url(../img/checkbox-checked.png) left top no-repeat;
+}
+
+
+label.g-checkbox__label {
+    display:inline-block;
+    @include px2rem(margin-bottom, 15px);
+    -webkit-touch-callout: none;
+    @include user-select(none);
+    @include font-size(16px);
+    line-height:1;
+    color:$title-color;
 }

@@ -1,2 +1,142 @@
-﻿body {
+﻿@import "../../modules/_base.scss";
+/*Main Order Form*/
+.b-order{
+    @include px2rem(padding-bottom, 15px);
+    @extend .rainbow;
+    &:after{
+        @include px2rem(height, 15px);
+    }
+}
+.b-order__title{
+    @extend .b-result__title;
+}
+
+.b-order__section{
+    @include px2rem(padding, 25px 0 15px);
+    background:#fff;
+    .g-container{
+        position:relative;
+    }
+}
+.b-order__section--alt{
+    background:#dadada;
+}
+.b-order__section--compact{
+    padding-top:0;
+}
+.b-order__col{
+    float:left;
+    width:100%;
+    min-height:1px;
+    box-sizing:border-box;
+
+    @include media($tablet){
+        width:36%;
+    }
+}
+
+
+.b-order__label{
+    display:table;
+    width:100%;
+    @include px2rem(height, 44px);
+    table-layout:fixed;
+    @include px2rem(margin-bottom, 15px);
+}
+.b-order__label-inner{
+    display:table-cell;
+    vertical-align:middle;
+    @include font-size(18px);
+    line-height:1;
+
+    @include media($tablet){
+        @include font-size(16px);
+    }
+    @include media($desktop){
+        @include font-size(18px);
+    }
+}
+
+.b-order__submit{
+    @include px2rem(padding-top, 25px);
+    text-align:center;
+}
+
+.b-order__btn{
+    @extend .g-btn;   
+}
+
+.b-order__btn--1{
+    background-color:#ea1c24;
+    border-color:#ea1c24;
+
+    &:hover,
+    &:focus{
+        background-color:darken(#ea1c24, 10%);
+        border-color:darken(#ea1c24, 10%);
+    }
+}
+
+.b-order__btn--3{
+    background-color:#19c1f3;
+    border-color:#19c1f3;
+
+    &:hover,
+    &:focus{
+        background-color:darken(#19c1f3, 10%);
+        border-color:darken(#19c1f3, 10%);
+    }
+}
+
+.b-order__btn--2,
+.b-order__btn--3{
+    @include font-size(18px);
+    width:100%;
+    @include px2rem(max-width, 380px);
+
+    @include media($desktop){
+        @include font-size(24px);
+    }
+}
+
+
+
+.b-order__checkbox{
+    text-align:center;
+
+    @include media($tablet){
+        position:absolute;
+        top:0;
+        @include px2rem(right, 10px);
+        text-align:right;
+    }
+
+    @include media($desktop){
+        @include px2rem(right, 22px);
+    }
+}
+.b-order__checkbox-label{
+    display:inline-block;
+    @include px2rem(min-height, 31px);
+    @include px2rem(padding-right, 40px);
+    @include px2rem(margin-bottom, 15px);
+    @include font-size(18px);
+    line-height:1;
+    color:$title-color;
+    background-image:url(../img/checkbox.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+    text-align:right;
+
+    &.active{
+        background-image:url(../img/checkbox-checked.png);
+    }
+}
+.js .b-order__checkbox-input{
+    @extend .g-visuallyhidden;
+}
+
+.no-js .b-order__checkbox-label{
+    padding-right:0;
+    background-image:none;
 }

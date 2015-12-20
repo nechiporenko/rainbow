@@ -23,14 +23,14 @@
 
 .b-result__title{
     display:block;
-    @include px2rem(margin, 0 0 $project-line-height/2);
+    @include px2rem(margin, 0 0 25px);
     font-family:$font-regular;
     font-weight:normal;
     @include font-size(30px);
     color:$text-color;
     text-align:center;
     text-transform:uppercase;
-    @include px2rem(letter-spacing, .5px);
+    @include px2rem(letter-spacing, .8px);
     line-height:1.2;
 }
 

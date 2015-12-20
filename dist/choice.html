@@ -126,21 +126,242 @@
 
         <!--ORDER FORM-->
         <form class="b-order">
-            <div class="b-order__section b-order__section--1">
-                <span class="b-order__title">Страхователь</span>
-            </div>
-            <div class="b-order__section b-order__section--2">
-                <span class="b-order__title">Собственник</span>
-            </div>
-            <div class="b-order__section b-order__section--3">
-                <span class="b-order__title">Водители</span>
-            </div>
-            <div class="b-order__section b-order__section--4">
-                <span class="b-order__title">Транспортное средство</span>
-            </div>
-            <div class="b-order__section b-order__section--5">
-                <span class="b-order__title">Доставка</span>
-            </div>
+            <div class="b-order__section">
+                <div class="g-container">
+                    <span class="b-order__title">Страхователь</span>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Фамилия</label>
+                            <input class="g-input" placeholder="Фамилия" />
+                            <label class="g-visuallyhidden">Имя</label>
+                            <input class="g-input" placeholder="Имя" />
+                            <label class="g-visuallyhidden">Отчество</label>
+                            <input class="g-input" placeholder="Отчество" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">День рождения</label>
+                            <input class="g-input" placeholder="День рождения" />
+                            <label class="g-visuallyhidden">Паспорт серия</label>
+                            <input class="g-input" placeholder="Паспорт серия" />
+                            <label class="g-visuallyhidden">Паспорт номер</label>
+                            <input class="g-input" placeholder="Паспорт номер" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Регион</label>
+                            <input class="g-input" placeholder="Регион" />
+                            <label class="g-visuallyhidden">Город</label>
+                            <input class="g-input" placeholder="Город" />
+                            <label class="g-visuallyhidden">Улица</label>
+                            <input class="g-input" placeholder="Улица" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Дом</label>
+                            <input class="g-input" placeholder="Дом" />
+                            <label class="g-visuallyhidden">Корпус</label>
+                            <input class="g-input" placeholder="Корпус" />
+                            <label class="g-visuallyhidden">Квартира</label>
+                            <input class="g-input" placeholder="Квартира" />
+                        </div>
+                    </div>
+                </div>
+            </div><!--/b-order__section-->
+
+            <div class="b-order__section b-order__section--alt">
+                <div class="g-container">
+                    <span class="b-order__title">Собственник</span>
+                    <div class="b-order__checkbox js-checkbox">
+                        <label class="b-order__checkbox-label">
+                            Совпадает со<br />страхователем
+                            <input type="checkbox" class="b-order__checkbox-input" />
+                        </label>
+                    </div>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Фамилия</label>
+                            <input class="g-input" placeholder="Фамилия" />
+                            <label class="g-visuallyhidden">Имя</label>
+                            <input class="g-input" placeholder="Имя" />
+                            <label class="g-visuallyhidden">Отчество</label>
+                            <input class="g-input" placeholder="Отчество" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">День рождения</label>
+                            <input class="g-input" placeholder="День рождения" />
+                            <label class="g-visuallyhidden">Паспорт серия</label>
+                            <input class="g-input" placeholder="Паспорт серия" />
+                            <label class="g-visuallyhidden">Паспорт номер</label>
+                            <input class="g-input" placeholder="Паспорт номер" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Регион</label>
+                            <input class="g-input" placeholder="Регион" />
+                            <label class="g-visuallyhidden">Город</label>
+                            <input class="g-input" placeholder="Город" />
+                            <label class="g-visuallyhidden">Улица</label>
+                            <input class="g-input" placeholder="Улица" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Дом</label>
+                            <input class="g-input" placeholder="Дом" />
+                            <label class="g-visuallyhidden">Корпус</label>
+                            <input class="g-input" placeholder="Корпус" />
+                            <label class="g-visuallyhidden">Квартира</label>
+                            <input class="g-input" placeholder="Квартира" />
+                        </div>
+                    </div>
+                </div>
+            </div><!--/b-order__section-->
+
+            <div class="b-order__section">
+                <div class="g-container">
+                    <span class="b-order__title">Водители</span>
+                    <div class="g-row">
+                        <div class="b-order__col">
+                            <label class="g-visuallyhidden">Количество водителей</label>
+                            <input class="g-input" placeholder="Количество водителей" />
+                        </div>
+                    </div>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Фамилия</label>
+                            <input class="g-input" placeholder="Фамилия" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Имя</label>
+                            <input class="g-input" placeholder="Имя" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Отчество</label>
+                            <input class="g-input" placeholder="Отчество" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">День рождения</label>
+                            <input class="g-input" placeholder="День рождения" />
+                        </div>
+                    </div>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">Стаж вождения</label>
+                            <input class="g-input" placeholder="Стаж вождения" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">ВУ серия</label>
+                            <input class="g-input" placeholder="ВУ серия" />
+                        </div>
+                        <div class="g-col g-col--one-fourth">
+                            <label class="g-visuallyhidden">ВУ номер</label>
+                            <input class="g-input" placeholder="ВУ номер" />
+                        </div>
+                    </div>
+                </div>
+            </div><!--/b-order__section-->
+
+            <div class="b-order__section b-order__section--compact">
+                <div class="g-container">
+                    <span class="b-order__title">Транспортное средство</span>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Марка</label>
+                            <input class="g-input" placeholder="Марка" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Модель</label>
+                            <input class="g-input" placeholder="Модель" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Год выпуска</label>
+                            <input class="g-input" placeholder="Год выпуска" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Мощность л.с.</label>
+                            <input class="g-input" placeholder="Мощность л.с." />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">VIN</label>
+                            <input class="g-input" placeholder="VIN" />
+                        </div>
+                    </div>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Госзнак</label>
+                            <input class="g-input" placeholder="Госзнак" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="b-order__label">
+                                <span class="b-order__label-inner">ПТС</span>
+                            </label>
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Серия</label>
+                            <input class="g-input" placeholder="Серия" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Номер</label>
+                            <input class="g-input" placeholder="Номер" />
+                        </div>
+                    </div>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fifth">
+                            <label class="b-order__label">
+                                <span class="b-order__label-inner">Диагностическая карта</span>
+                            </label>
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Номер</label>
+                            <input class="g-input" placeholder="Номер" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Дата выдачи</label>
+                            <input class="g-input" placeholder="Дата выдачи" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Срок</label>
+                            <input class="g-input" placeholder="Срок" />
+                        </div>
+                    </div>
+                </div>
+            </div><!--/b-order__section-->
+
+            <div class="b-order__section b-order__section--alt">
+                <div class="g-container">
+                    <span class="b-order__title">Доставка <img src="img/car.png" alt="Delivery" /></span>
+                    <div class="g-row">
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Регион</label>
+                            <input class="g-input" placeholder="Регион" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Город</label>
+                            <input class="g-input" placeholder="Город" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Улица</label>
+                            <input class="g-input" placeholder="Улица" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Дом</label>
+                            <input class="g-input" placeholder="Дом" />
+                        </div>
+                        <div class="g-col g-col--one-fifth">
+                            <label class="g-visuallyhidden">Квартира</label>
+                            <input class="g-input" placeholder="Квартира" />
+                        </div>
+                    </div>
+                    <div class="b-order__submit">
+                        <button type="button" class="b-order__btn b-order__btn--1">Оформить полис</button>
+                    </div>
+                    <!--<div class="b-order__submit">
+                        <div class="g-row">
+                            <div class="g-col g-col--one-half">
+                                <button type="button" class="b-order__btn b-order__btn--2">Наличными при доставке</button>
+                            </div>
+                            <div class="g-col g-col--one-half">
+                                <button type="button" class="b-order__btn b-order__btn--3">Картой на сайте</button>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div><!--/b-order__section-->
         </form>
         <!--/ORDER FORM-->
     </main>
