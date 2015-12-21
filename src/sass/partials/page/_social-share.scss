@@ -1,0 +1,83 @@
+﻿@import "../../modules/_base.scss";
+/*Social Share Block*/
+.b-share{
+    text-align:center;
+}
+.b-share__title{
+    display:block;
+    margin-bottom:30px;
+    line-height:1.125;
+    font-family:$font-medium;
+    color:#dadada;
+    @include font-size(24px);
+
+    @include media($tablet){
+        @include font-size(34px);
+    }
+}
+
+.b-share__list{
+    list-style-type:none;
+    padding:0;
+    margin-bottom:90px;
+    font-size:0;
+}
+.b-share__item{
+    display:inline-block;
+    @include font-size(34px);
+    margin:0 5px 10px;
+
+    @include media($tablet){
+        margin:0 10px 10px;
+    }
+
+    @include media($desktop){
+        margin:0 15px 10px;
+    }
+}
+
+.b-share__link{
+    display:block;
+    width:62px;
+    height:62px;
+    line-height:62px;
+    border-radius:10px;
+    background:#ddd;
+    color:#fff;
+    border:1px solid darken(#ddd, 10%);
+    text-decoration:none;
+    text-align:center;
+    box-sizing:border-box;
+
+    &:hover,
+    &:active{
+        background-color:$primary;
+        border-color:darken($primary, 10%);
+    }
+
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+        margin:0;
+        text-shadow:0 0 3px rgba(#000, .5);
+    }
+}
+
+.b-share--vk{
+    background-color:#3c6693;
+    border-color:darken(#3b6593, 10%);
+}
+.b-share--odn{
+    background-color:#f6831b;
+    border-color:darken(#f6831b, 10%);
+}
+.b-share--fb{
+    background-color:#345294;
+    border-color:darken(#345294, 10%);
+}
+.b-share--tw{
+    background-color:#00a5eb;
+    border-color:darken(#00a5eb, 10%);
+}
+.b-share--ins{
+    background-color:#45769f;
+    border-color:darken(#45769f, 10%);
+}

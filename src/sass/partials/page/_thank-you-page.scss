@@ -1,0 +1,102 @@
+﻿@import "../../modules/_base.scss";
+/*Thank You Block*/
+.b-thanks{
+    @include px2rem(padding, 30px 0 0);
+    background:#fff;
+}
+.b-thanks__inner{
+    @extend .g-container;
+    background-image:url(../img/rainbow-corner.png);
+    background-repeat:no-repeat;
+    background-position:left bottom;
+
+    @include media(min-width em(992)){
+        background-image:url(../img/rainbow.png);
+    }
+}
+.b-thanks__col{
+    float:left;
+    width:100%;
+    min-height:1px;
+    box-sizing:border-box;
+}
+.b-thanks__col--first{
+    display:none;
+    @include media($desktop){
+        display:block;
+        width:36.92%;
+    }
+}
+.b-thanks__col--last{
+    text-align:center;
+    @include media($desktop){
+        width:57.94%;
+    }
+}
+
+.b-thanks__logo{
+    display:block;
+    @include px2rem(margin, 0 auto 30px);
+    @include px2rem(width, 267px);
+    @include px2rem(height, 98px);
+    @include hide-text;
+    background-image:url(../img/logo-footer.png);
+    background-position: left center;
+    background-repeat:no-repeat;
+
+    @include hidpi(1.5){
+        background-image:url(../img/logo-footer-2x.png);
+        background-size:100% 100%;
+    }
+}
+.b-thanks__title,
+.b-thanks__subtitle{
+    display:block;
+    font-family:$font-medium;
+    color:$primary;
+    line-height:1.125;
+}
+
+.b-thanks__title{
+    @include font-size(40px);
+    @include px2rem(letter-spacing, 1px);
+
+    @include media($tablet){
+        @include font-size(70px);
+    }
+    @include media($desktop){
+        @include font-size(90px);
+        @include px2rem(letter-spacing, 2px);
+    }
+}
+.b-thanks__subtitle{
+    margin-bottom:40px;
+    @include font-size(22px);
+    @include px2rem(letter-spacing, -1px);
+
+    @include media($tablet){
+        @include font-size(28px);
+    }
+
+    @include media($desktop){
+        @include font-size(34px);
+    }
+}
+.b-thanks__info{
+    margin-bottom:40px;
+    @include font-size(22px);
+    color:#000;
+    line-height:1.1;
+
+    @include media($tablet){
+        @include font-size(24px);
+    }
+
+    @include media($desktop){
+        @include font-size(30px);
+    }
+}
+.b-thanks__img{
+    display:block;
+    @extend .g-max-full-width;
+}

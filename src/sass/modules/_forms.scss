@@ -17,7 +17,7 @@ textarea {
 .g-select,
 .g-textarea{
     width:100%;
-    @include px2rem(padding, 8px 10px);//The 8px vertically centers text on FF, ignored by Webkit
+    @include px2rem(padding, 6px 10px);//The 6px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
     border: 1px solid $border-color;
     border-radius:0;
@@ -43,6 +43,9 @@ textarea {
     }
 
     @include media($desktop){
+        @include font-size(18px);
+    }
+    @include media($large){
         @include font-size(21px);
     }
 }
