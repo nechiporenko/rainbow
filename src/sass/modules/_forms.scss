@@ -21,10 +21,10 @@ textarea {
     border: 1px solid $border-color;
     border-radius:0;
     color:$text-color;
-    box-shadow: inset 0 2px 3px 2px rgba(#000, .1);
+    //box-shadow: inset 0 2px 3px 2px rgba(#000, .1);
     box-sizing: border-box;
     @include font-size(16px);
-    font-family:$font-medium;
+    //font-family:$font-medium;
 
     @include placeholder{
         color:$text-color;
@@ -34,7 +34,7 @@ textarea {
     &:hover,
     &:focus{
         border-color:$primary;
-        box-shadow: inset 0 2px 3px 2px rgba($primary, .3);
+        //box-shadow: inset 0 2px 3px 2px rgba($primary, .3);
         outline:0;
     }
 
@@ -47,7 +47,7 @@ textarea {
 .g-select{
     @include px2rem(height, 44px);
     @include px2rem(line-heigth, 44px);
-    @include px2rem(padding, 3px 10px);
+    @include px2rem(padding, 0 10px);
 }
 
 .g-textarea{
@@ -76,7 +76,7 @@ input[type="radio"] {
 .g-label{
     &.error{
         border-color:red;
-        box-shadow:inset 0 2px 3px 2px rgba(red, .3);
+        //box-shadow:inset 0 2px 3px 2px rgba(red, .3);
     }
 }
 
@@ -90,7 +90,7 @@ input[type="radio"] {
         &:hover,
         &:focus{
             border-color:$border-color;
-            box-shadow: inset 0 2px 3px 2px rgba(#000, .1);
+            //box-shadow: inset 0 2px 3px 2px rgba(#000, .1);
         }
     }
 }
